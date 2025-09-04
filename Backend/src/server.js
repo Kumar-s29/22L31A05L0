@@ -3,7 +3,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const shortUrlRoutes = require("./routes/shortUrlRoutes");
 
-const { loggingMiddleware } = require("./LogginMiddlewares/loggingMiddleware");
+const {
+  loggingMiddleware,
+} = require("../../LoggingMiddlewares/loggingMiddleware");
 
 const app = express();
 app.use(bodyParser.json());

@@ -5,7 +5,7 @@ const {
   isValidShortcode,
 } = require("../utils/shortcodeUtils");
 const urlStore = require("../store/urlStore");
-const log = require("../LogginMiddlewares/loggingMiddleware");
+const log = require("../../../LoggingMiddlewares/loggingMiddleware");
 
 exports.createShortUrl = (req, res) => {
   const { url, validity = 30, shortcode } = req.body;

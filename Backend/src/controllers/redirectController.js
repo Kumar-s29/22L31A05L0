@@ -1,7 +1,7 @@
 // Handles redirection for short URLs
 
 const urlStore = require("../store/urlStore");
-const log = require("../LogginMiddlewares/loggingMiddleware");
+const log = require("../../../LoggingMiddlewares/loggingMiddleware");
 
 module.exports = (req, res) => {
   const { shortcode } = req.params;

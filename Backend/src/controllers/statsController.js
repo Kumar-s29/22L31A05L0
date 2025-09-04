@@ -1,7 +1,7 @@
 // Handles statistics retrieval for short URLs
 
 const urlStore = require("../store/urlStore");
-const log = require("../LogginMiddlewares/loggingMiddleware");
+const log = require("../../../LoggingMiddlewares/loggingMiddleware");
 
 exports.getShortUrlStats = (req, res) => {
   const { shortcode } = req.params;
